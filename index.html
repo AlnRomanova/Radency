@@ -11,53 +11,30 @@
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <form class="create-note-form">
-            <!-- <label>
-                Name
-                <input type="text" class="name" name="name"  />
-              </label>
-              <label>
-                Created
-                <input type="date" name="created" />
-              </label>
-              <label>
-                Category
-                <input type="text" name="category"/>
-              </label>
-              <label>
-                Content
-                <input type="text" name="content"/>
-              </label>
-              <label>
-                Dates
-                <input type="text" name="dates"/>
-              </label> -->
               <label for="name">Name: </label>
               <input type="text" name="name" id="name">
               <br>
-              
               <label for="create">Create: </label>
               <input type="date" name="create" id="create">
               <br>
-              
               <label for="category">Categoty: </label>
               <input type="text" name="category" id="category">
               <br>
               <label for="content">Contend: </label>
               <input type="text" name="content" id="content">
-              <br>
-              <!-- <label for="edit"></label>
-              <input type="edit" id="dates">
-              <br>
-              <label for="dates"> Dates: </label>
-              <input type="date" id="dates">
-              <br>
-              <label for="dates"> Dates: </label>
-              <input type="date" id="dates">
-              <br>
-              <label for="dates"> Dates: </label>
-              <input type="date" id="dates">
-              <br> -->
-              
+              <br> 
+              <label for="dates">Dates: </label>
+              <input type="text" name="dates" id="dates">
+              <br> 
+              <label for="edits"></label>
+              <input type="text" name="edits" id="edits">
+              <br> 
+              <label for="archived">Archived: </label>
+              <input type="text" name="achived" id="achived">
+              <br> 
+              <label for="delete">Delete: </label>
+              <input type="text" name="delete" id="delete">
+              <br> 
               <button class="submit" type="submit">Submit</button>
         </form>
       <button class="modal__btn-close" data-modal-close>
@@ -77,6 +54,9 @@
         <th>Category</th>
         <th>Content</th>
         <th>Dates</th>
+        <th></th>
+        <th>Achived</th>
+        <th>Delete</th>
       </tr>
     </thead>
     <tbody></tbody>
