@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+ 
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <form class="create-note-form">
+            <!-- <label>
+                Name
+                <input type="text" class="name" name="name"  />
+              </label>
+              <label>
+                Created
+                <input type="date" name="created" />
+              </label>
+              <label>
+                Category
+                <input type="text" name="category"/>
+              </label>
+              <label>
+                Content
+                <input type="text" name="content"/>
+              </label>
+              <label>
+                Dates
+                <input type="text" name="dates"/>
+              </label> -->
+              <label for="name">Name: </label>
+              <input type="text" name="name" id="name">
+              <br>
+              
+              <label for="create">Create: </label>
+              <input type="date" name="create" id="create">
+              <br>
+              
+              <label for="category">Categoty: </label>
+              <input type="text" name="category" id="category">
+              <br>
+              <label for="content">Contend: </label>
+              <input type="text" name="content" id="content">
+              <br>
+              <!-- <label for="edit"></label>
+              <input type="edit" id="dates">
+              <br>
+              <label for="dates"> Dates: </label>
+              <input type="date" id="dates">
+              <br>
+              <label for="dates"> Dates: </label>
+              <input type="date" id="dates">
+              <br>
+              <label for="dates"> Dates: </label>
+              <input type="date" id="dates">
+              <br> -->
+              
+              <button class="submit" type="submit">Submit</button>
+        </form>
+      <button class="modal__btn-close" data-modal-close>
+        <svg class="modal__icon" width="14" height="14">
+          <use href="../images//closeBtn.svg"></use>
+        </svg>
+      </button>
+      <div class="modal__body"></div>
+      </div>
+    </div>
+  </div>
+  <table  id="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Create</th>
+        <th>Category</th>
+        <th>Content</th>
+        <th>Dates</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<button class="btn">Create note</button>
+
+  <script src="./index.js"></script>  
+</body>
+</html>
