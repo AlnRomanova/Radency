@@ -23,18 +23,8 @@
               <label for="content">Contend: </label>
               <input type="text" name="content" id="content">
               <br> 
-              <label for="dates">Dates: </label>
-              <input type="text" name="dates" id="dates">
-              <br> 
-              <label for="edits"></label>
-              <input type="text" name="edits" id="edits">
-              <br> 
-              <label for="archived">Archived: </label>
-              <input type="text" name="achived" id="achived">
-              <br> 
-              <label for="delete">Delete: </label>
-              <input type="text" name="delete" id="delete">
-              <br> 
+            
+              
               <button class="submit" type="submit">Submit</button>
         </form>
       <button class="modal__btn-close" data-modal-close>
@@ -46,21 +36,28 @@
       </div>
     </div>
   </div>
+  <div class="table-container">
   <table  id="table">
     <thead>
-    <tr>
+    <tr >
         <th>Name</th>
         <th>Create</th>
         <th>Category</th>
         <th>Content</th>
         <th>Dates</th>
         <th></th>
-        <th>Achived</th>
-        <th>Delete</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-</table>
+        <th class="icon-header">
+          </td>
+        </th>
+        <th class="icon-header">
+          </td>
+        </th>
+      </tr> 
+    </thead> 
+      <tbody></tbody>
+    </table>
+
+</div>
 <button class="btn">Create note</button>
 
   <script src="./index.js"></script>  
