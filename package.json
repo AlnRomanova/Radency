@@ -16,9 +16,10 @@
     "url": "https://github.com/AlnRomanova/Radency/issues"
   },
   "homepage": "https://github.com/AlnRomanova/Radency#readme",
-  "dependencies": {
+  "devDependencies": {
     "parcel": "^2.9.3",
     "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml": "^0.16.6",
     "posthtml-include": "^1.7.4"
   }
 }

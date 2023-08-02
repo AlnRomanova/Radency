@@ -5,6 +5,7 @@ const modalBodyEl = document.querySelector(".modal__body");
 backdropEl.addEventListener("click", onBackdropClick);
 const buttonCreateNote = document.querySelector(".btn");
 
+
 buttonCreateNote.addEventListener("click", onOpenModal);
 
 function onOpenModal() {
@@ -40,11 +41,11 @@ function renderNotes() {
   const tbody = table.querySelector("tbody");
 
   const rows = notes
-    .map((rowData) => {
+    .map((rowData, index) => {
       const cells = Object.values(rowData)
         .map((value) => `<td>${value}</td>`)
         .join("");
-      return `<tr>${cells}
+      return `<tr id=${index}>${cells}
       <td></td>
       <td>
       <button class="table__btn">
