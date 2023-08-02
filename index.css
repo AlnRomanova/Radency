@@ -1,12 +1,24 @@
-.table-container {
+.container {
   display: flex;
+  flex-direction: column;
+  width: 70%;
 }
 
+.table-container,
+.button-wrapper {
+  padding: 10px;
+  margin-right: 10px; 
+  
+}
+
+.table-container:last-child {
+  margin-right: 0; 
+}
 table {
   text-align: center;
   position: relative;
   border-collapse: collapse;
-  width: 80%;
+  width: 100%;
 }
 
 tr {
